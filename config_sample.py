@@ -1,3 +1,4 @@
+## Config for broadcast feature
 import os
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
 AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())

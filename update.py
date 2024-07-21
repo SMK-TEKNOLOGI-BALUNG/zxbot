@@ -84,7 +84,7 @@ if UPSTREAM_REPO is not None:
         [
             f"git init -q \
                      && git config --global user.email malasicikiwir@gmail.com \
-                     && git config --global user.name IgoBoT-mltb \
+                     && git config --global user.name zxbot \
                      && git add . \
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \

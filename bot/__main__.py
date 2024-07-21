@@ -114,21 +114,22 @@ async def stats(_, message):
 async def start(client, message):
     buttons = ButtonMaker()
     buttons.ubutton("Repo", "https://github.com/ctrhyz/IgoBoT-mltb")
-    buttons.ubutton("Admin", "https://t.me/IgoPalevi")
+    buttons.ubutton("Admin", "https://t.me/ZxhCarkecor")
     buttons.ubutton("Donate", "https://saweria.co/zxhcarkecor")
     reply_markup = buttons.build_menu(2)
     if await CustomFilters.authorized(client, message):
         start_string = f"""
-Bot Started!
-Type /{BotCommands.HelpCommand} to get a list of available commands
+<b><i>Bot Started!!</i></b>
+<b>Type /{BotCommands.HelpCommand} to get a list of available commands</b>
 
-<i>This bot made with ❤️ by @ZxhCarkecor</i>
+<small><b>Uptime</b> : <i>{get_readable_time(time() - botStartTime)}</i></small>
+<small><i>This bot made with ❤️ by @ZxhCarkecor</i></small>
 """
         await sendMessage(message, start_string, reply_markup)
     else:
         await sendMessage(
             message,
-            f"""Use me in group.\n<b>Ask Admin for join link.</b>\n\n<i>This bot made with ❤️ by @ZxhCarkecor</i>""",
+            f"""<b>Don't Use In PM!</b>\nJoin @zxh_leech to use the bot.\n<small><i>This bot made with ❤️ by @ZxhCarkecor</i></small>""",
             reply_markup,
         )
 

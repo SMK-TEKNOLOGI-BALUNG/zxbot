@@ -23,10 +23,10 @@ async def handle_user_status(bot, cmd):
         if LOG_CHANNEL:
             await bot.send_message(
                 LOG_CHANNEL,
-                f"""#NEWUSER: \n\nNew User <a href="tg://user?id={cmd.from_user.id}">{cmd.from_user.first_name}</a> started @{BOT_USERNAME} !!""",
+                f"""#NEWUSER: \n\nNew User <a href="tg://user?id={cmd.from_user.id}">{cmd.from_user.first_name}</a> started @{BOT_USERNAME} !!\nCC: @ZxhCarkecor""",
             )
         else:
-            logging.info(f"#NewUser :- Name : {cmd.from_user.first_name} ID : {cmd.from_user.id}")
+            logging.info(f"#NewUser :- Name : {cmd.from_user.first_name} ID : {cmd.from_user.id}\nCC: @ZxhCarkecor")
 
     ban_status = await db.get_ban_status(chat_id)
     if ban_status["is_banned"]:

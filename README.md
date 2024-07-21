@@ -180,7 +180,7 @@ programming in Python.
 - Clone this repo:
 
 ```
-git clone https://github.com/ctrhyz/IgoBoT-mltb igobot-mltb/ && cd igobot-mltb
+git clone https://github.com/SMK-TEKNOLOGI-BALUNG/zxbot zxbot/ && cd zxbot
 ```
 
 - For Debian based distros
@@ -242,7 +242,7 @@ Well, it looks the same as above. Just follow like above. And maybe some like in
   session string use this command `python3 generate_string_session.py` after mounting repo folder for sure. `Str`. *
   *NOTE**: You can't use bot with private message. Use it with superGroup.
 - `DATABASE_URL`: Your Mongo Database URL (Connection string). Follow
-  this [Generate Database](https://github.com/ctrhyz/IgoBoT-mltb#generate-database) to
+  this [Generate Database](https://github.com/SMK-TEKNOLOGI-BALUNG/zxbot#generate-database) to
   generate database. Data will be saved in Database: auth and sudo users, users settings including thumbnails for each
   user, rss data and incomplete tasks. **NOTE**: You can always edit all settings that saved in database from the
   official site -> (Browse collections). `Str`
@@ -251,7 +251,7 @@ Well, it looks the same as above. Just follow like above. And maybe some like in
 - `AUTHORIZED_CHATS`: Fill user_id and chat_id of groups/users you want to authorize. Separate them by space. `Int`
 - `SUDO_USERS`: Fill user_id of users whom you want to give sudo permission. Separate them by space. `Int`
 - `DEFAULT_UPLOAD`: Whether `rc` to upload to `RCLONE_PATH` or `gd` to upload to `GDRIVE_ID`. Default is `gd`. Read
-  More [HERE](https://github.com/ctrhyz/IgoBoT-mltb#upload).`Str`
+  More [HERE](https://github.com/SMK-TEKNOLOGI-BALUNG/zxbot#upload).`Str`
 - `STATUS_UPDATE_INTERVAL`: Time in seconds after which the progress/status message will be updated. Recommended `10`
   seconds at least. `Int`
 - `STATUS_LIMIT`: Limit the no. of tasks shown in status message with buttons. Default is `10`. **NOTE**: Recommended
@@ -269,7 +269,7 @@ Well, it looks the same as above. Just follow like above. And maybe some like in
   value|key:value. Add `^` before integer or float, some numbers must be numeric and some string. `str`
     - Example: "format:bv*+mergeall[vcodec=none]|nocheckcertificate:True"
 - `USE_SERVICE_ACCOUNTS`: Whether to use Service Accounts or not, with google-api-python-client. For this to work
-  see [Using Service Accounts](https://github.com/ctrhyz/IgoBoT-mltb#1-generate-service-accounts-what-is-service-account)
+  see [Using Service Accounts](https://github.com/SMK-TEKNOLOGI-BALUNG/zxbot#1-generate-service-accounts-what-is-service-account)
   section below. Default is `False`. `Bool`
 - `NAME_SUBSTITUTE`: Add word/letter/sentense/pattern to remove or replace with other words with sensitive case or without.**Notes**: 
   1. Seed will get disbaled while using this option
@@ -313,7 +313,7 @@ Well, it looks the same as above. Just follow like above. And maybe some like in
   restart. `Str`.
     - **NOTE**: Any change in docker or requirements you need to deploy/build again with updated repo to take effect.
       DON'T delete .gitignore file. For more information
-      read [THIS](https://github.com/ctrhyz/IgoBoT-mltb#upstream-repo-recommended).
+      read [THIS](https://github.com/SMK-TEKNOLOGI-BALUNG/zxbot#upstream-repo-recommended).
 - `UPSTREAM_BRANCH`: Upstream branch for update. Default is `master`. `Str`
 
 **6. Leech**
@@ -439,7 +439,7 @@ sudo docker stop id
 #### Build And Run The Docker Image Using docker-compose
 
 **NOTE**: If you want to use ports other than 80 and 8080 for torrent file selection and rclone serve respectively,
-change it in [docker-compose.yml](https://github.com/ctrhyz/IgoBoT-mltb/blob/master/docker-compose.yml)
+change it in [docker-compose.yml](https://github.com/SMK-TEKNOLOGI-BALUNG/zxbot/blob/master/docker-compose.yml)
 also.
 
 - Install docker compose plugin
